@@ -53,3 +53,6 @@ def getMostPopularDirectors(directorDict):
     for key, val in directorDict.items():
         dirList.append([val, key])
     return sorted(dirList, reverse=True)
+
+setup()
+print(getAverageTitleLength())

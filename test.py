@@ -1,10 +1,11 @@
 import netflixtitles as nt
+totlenght = 0
+
 
 nt.setup()
+
 for row in nt.data:
-    totlenght = 0
     name = row.get('director')
     totlenght += len(name)
-    print(totlenght)
 
 print(totlenght/ len(nt.data))
